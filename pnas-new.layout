@@ -1,0 +1,361 @@
+#% Do not delete the line below; configure depends on this
+#  \DeclareLaTeXClass[pnas-new]{Article (Proc. Natl. Acad. Sci. USA - new)}
+#  \DeclareCategory{Articles}
+# PNAS two-column article textclass definition file. Taken from initial LyX source code
+# Author : David Bortz <dmbortz@colorado.edu>
+# Modified : Carlo Baldassi <carlobaldassi@gmail.com>
+
+Format 49
+
+#PageStyle               Headers
+DefaultStyle            Standard
+#ExcludesModule inputenc
+#ExcludesModule babel
+Provides inputenc	1
+Provides babel		1
+Provides amsmath        1
+Provides amsfonts       1
+Provides amssymb        1
+Provides lmodern        1
+Provides helvet         1
+Provides fontenc        1
+Provides lettrine       1
+Provides afterpage      1
+Provides ifpdf          1
+Provides ifxetex        1
+Provides xcolor         1
+Provides tikz           1
+Provides mdframed       1
+Provides widetext       1
+Provides hyperref       1
+Provides authblk        1
+Provides xifthen        1
+Provides textcomp       1
+Provides graphicx       1
+Provides xcolor         1
+Provides colortbl       1
+Provides booktabs       1
+Provides algorithm      1
+Provides algpseudocode  1
+Provides changepage     1
+Provides geometry       1
+Provides caption        1
+Provides natbib         1
+Provides etoolbox       1
+Provides fancyhdr       1
+Provides lastpage       1
+Provides titlesec       1
+Provides footmisc       1
+Provides enumitem       1
+
+Input stdclass.inc
+
+Columns                 2
+Sides                   2
+SecNumDepth             3
+TocDepth                3
+
+ClassOptions
+        Other      9pt
+        Other      twocolumn
+        Other      twoside
+End
+
+Style Standard
+        Category              MainText
+        Margin                Static
+        LatexType             Paragraph
+        LatexName             dummy
+        ParIndent             MM
+        ParSkip               0.4
+        Align                 Block
+        AlignPossible         Block, Left, Right, Center
+        LabelType             No_Label
+End
+
+Preamble
+  \templatetype{pnasresearcharticle} % Choose template 
+  % {pnasresearcharticle} = Template for a two-column research article
+  % {pnasmathematics} = Template for a one-column mathematics article
+  % {pnasinvited} = Template for a PNAS invited submission
+
+  \dates{This manuscript was compiled on \today}
+  \doi{\url{www.pnas.org/cgi/doi/10.1073/pnas.XXXXXXXXXX}}
+EndPreamble
+
+## Now we do the title stuff.
+Style Title
+        CopyStyle             Title
+        InPreamble            1
+        InTitle               1
+	Font
+          Shape               Smallcaps
+          Series              Bold
+          Size                Larger
+	EndFont
+End
+Style Author
+        CopyStyle             Author
+        InPreamble            1
+        InTitle               1
+        Argument 1
+          LabelString         "affiliations etc."
+          MenuString          "Affiliations"
+          Tooltip             "A comma-separated list of letters, numbers etc. to be referenced by Affiliations, EqualAuthors, CorrespondingAuthor"
+          DefaultArg          "a"
+          AutoInsert          1
+          Decoration          Conglomerate
+          Font
+            Color             Blue
+            Family            Sans
+            Size              small
+          EndFont
+          LabelFont
+            Size              Tiny
+            Color             green
+          EndFont
+        EndArgument
+End
+Style Affiliation
+        Category              FrontMatter
+        Margin                Dynamic
+        LatexType             Command
+        InTitle               1
+        InPreamble            1
+        LatexName             affil
+        ParSkip               0.4
+        Align                 Center
+        AlignPossible         Block, Left, Right, Center
+        LabelType             Static
+        LabelSep              M
+        LabelString           "Affiliation:"
+
+        LabelFont
+          Shape               Italic
+        EndFont
+        Argument 1
+          LabelString         "Affiliation reference"
+          Tooltip             "A letter to be used as reference for the corresponding setting in Author environments"
+          DefaultArg          "a"
+          AutoInsert          1
+          Decoration          Minimalistic
+          Font
+            Color             Blue
+            Family            Sans
+            Size              small
+          EndFont
+          #LabelFont
+          #  Size                Tiny
+          #  Color               green
+          #EndFont
+        EndArgument
+End
+Style Abstract
+        CopyStyle             Abstract
+        InPreamble            1
+        NextNoIndent          0
+End
+
+Style Contributor
+        CopyStyle             Standard
+        Category              FrontMatter
+        LatexType             Command
+        InTitle               0
+        InPreamble            1
+        LatexName             authorcontributions
+        LabelType             Static
+        LabelString           "Author contributions "
+        Margin                First_Dynamic
+        LabelSep              " "
+        TopSep                0.7
+        BottomSep             0.2
+        LabelFont
+          Series              Bold
+          Shape               Smallcaps
+          Size                Normal
+        EndFont
+End
+Style Significance
+        CopyStyle             Contributor
+        LatexName             significancestatement
+        LabelString           "Significance "
+End
+Style LeadAuthor
+        CopyStyle             Contributor
+        LatexName             leadauthor
+        LabelString           "Lead author last name "
+End
+Style Declaration
+        CopyStyle             Contributor
+        LatexName             authordeclaration
+        LabelString           "Author declaration "
+End
+Style EqualAuthors
+        CopyStyle             Contributor
+        LatexName             equalauthors
+        LabelString           "Equal Authors "
+End
+Style CorrespondingAuthor
+        CopyStyle             Contributor
+        LatexName             correspondingauthor
+        LabelString           "Corresponding Author "
+End
+Style Keywords
+        CopyStyle             Contributor
+        LatexName             keywords
+        LabelString           "Keywords "
+End
+Style VerticalAdjustment
+        CopyStyle             Contributor
+        LatexName             verticaladjustment
+        LabelString           "Vertical adjustment "
+        Font
+          Family              Sans
+          Shape               Up
+          Size                Small
+        EndFont
+        LabelFont
+          Family              Sans
+          Shape               Up
+          Color               Magenta
+          Size                Small
+        EndFont
+End
+
+#Counter definition
+#        PrettyFormat          "Definition ##"
+#End
+#Counter theorem
+#        PrettyFormat          "Thorem ##"
+#End
+#Counter remark
+#        PrettyFormat          "Remark ##"
+#End
+#
+#Style Definition
+#        CopyStyle             Contributor
+#        LatexType             Environment
+#        Category              Extra
+#        LatexName             definition
+#        LabelString           "Definition \thedefinition "
+#        LabelCounter          definition
+#End
+#
+#Style Theorem
+#        CopyStyle             Definition
+#        LatexName             theorem
+#        LabelString           "Theorem \thetheorem "
+#        LabelCounter          theorem
+#End
+#
+#Style Remark
+#        CopyStyle             Definition
+#        LatexName             remark
+#        LabelString           "Remark \theremark "
+#        LabelCounter          remark
+#End
+
+
+Input stdsections.inc
+Input stdstarsections.inc
+Input lyxmacros.inc
+Input stdlayouts.inc
+Input stdlists.inc
+Input stdfloats.inc
+Input stdcounters.inc
+
+
+Style Widetext
+        CopyStyle             Standard
+        Category              Other
+        LatexType             Environment
+        LatexName             widetext
+End 
+
+Style Acknowledgments
+        CopyStyle             Standard
+        Category              BackMatter
+#       Margin                First_Dynamic
+        LatexType             Command
+        LatexName             acknow
+        LabelType             Above
+        LabelString           "Acknowledgments"
+        LabelBottomSep        0.5
+        LabelFont
+          Series              Bold
+          Shape               Smallcaps
+          Size                Large
+        EndFont
+        TopSep                0.7
+        BottomSep             0.7
+End
+
+#Style Bibliography
+#        Category              BackMatter
+##       Margin                First_Dynamic
+#        LatexType             Bib_Environment
+#        LatexName             thebibliography
+#        NextNoIndent          1
+#        LeftMargin            MM
+#        ParSkip               0.4
+#        ItemSep               0
+#        TopSep                0.7
+#        BottomSep             0.7
+#        ParSep                0.5
+#        Align                 Block
+#        AlignPossible         Block, Left
+#        LabelType             Bibliography
+#        LabelString           "References"
+#        LabelBottomSep        0.7
+#        Font
+#          Size                Small
+#        EndFont
+#        LabelFont
+#          Size                Normal
+#          Shape               Smallcaps
+#        EndFont
+#End
+
+NoStyle Chapter
+NoCounter chapter
+NoStyle Chapter*
+NoStyle Date
+NoStyle Right_Address
+NoStyle Address
+
+InsetLayout Flex:First_Letter
+        LatexName             dropcap
+        LatexType             Command
+        LyxType               charstyle
+        LabelString           "First Letter"
+        LabelFont
+          Size                Tiny
+          Color               blue
+        EndFont
+        Decoration            Conglomerate
+End
+
+InsetLayout Flex:Materials_and_Methods
+        LatexType             None
+        LeftDelim             "\matmethods{"
+        RightDelim            "}<br/>"
+        Decoration            Classic
+        InToc                 1
+        KeepEmpty             1
+        LyxType               custom
+        LabelString           "Materials and Methods"
+End
+
+#Counter tablenote
+#        PrettyFormat         "Tablenote ##"
+#        Within               table
+#End
+#
+#InsetLayout Flex:Table_Note
+#        CopyStyle             Foot
+#        LatexName             tablenote
+#        LabelString           "Table Note"
+#        LyxType               custom
+#        Decoration            Classic
+#        Counter               tablenote
+#End

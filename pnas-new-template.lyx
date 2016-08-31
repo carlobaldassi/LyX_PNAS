@@ -1,0 +1,1341 @@
+#LyX 2.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 474
+\begin_document
+\begin_header
+\textclass pnas-new
+\begin_preamble
+\makeatother
+% Use letters for affiliations, numbers to show equal authorship (if applicable) and to indicate the corresponding author 
+%\author[a,c,1]{Author One}
+%\author[b,1,2]{Author Two}
+%\author[a]{Author Three}
+
+%\affil[a]{Affiliation One}
+%\affil[b]{Affiliation Two}
+%\affil[c]{Affiliation Three}
+
+% Please give the surname of the lead author for the running footer
+%\leadauthor{Lead author last name}
+
+% Please add here a significance statement to explain the relevance of your work
+%\significancestatement{Authors must submit a 120-word maximum statement about the significance of their research paper written at a level understandable to an undergraduate educated scientist outside their field of speciality. The primary goal of the Significance Statement is to explain the relevance of the work in broad context to a broad readership. The Significance Statement appears in the paper itself and is required for all research papers.}
+
+% Please include corresponding author, author contribution and author declaration information
+%\authorcontributions{Please provide details of author contributions here.}
+%\authordeclaration{Please declare any conflict of interest here.}
+%\equalauthors{\textsuperscript{1}A.O.(Author One) and A.T. (Author Two) contributed equally to this work (remove if not applicable).} 
+%\correspondingauthor{\textsuperscript{2}To whom correspondence should be addressed. E-mail: author.two\@email.com}
+
+% Keywords are not mandatory, but authors are strongly encouraged to provide them. If provided, please include two to five keywords, separated by the pipe symbol, e.g:
+%\keywords{Keyword 1 $|$ Keyword 2 $|$ Keyword 3 $|$ ...}
+
+%\begin{abstract}
+%Please provide an abstract of no more than 250 words in a single paragraph. %Abstracts should explain to the general reader the major contributions of the article. %References in the abstract must be cited in full within the abstract itself and cited in the text.
+%\end{abstract}
+
+\dates{This manuscript was compiled on \today}
+\doi{\url{www.pnas.org/cgi/doi/10.1073/pnas.XXXXXXXXXX}}
+\makeatletter
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding default
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_math auto
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 2
+\papersides 2
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Template for preparing your research report submission to PNAS using Overleaf
+\end_layout
+
+\begin_layout Author
+Author One
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+a,c,1
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Author
+Author Two
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+b,1,2
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Author
+Author Three
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+a
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Affiliation
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+a
+\end_layout
+
+\end_inset
+
+Affiliation One
+\end_layout
+
+\begin_layout Affiliation
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+b
+\end_layout
+
+\end_inset
+
+Affiliation Two
+\end_layout
+
+\begin_layout Affiliation
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+c
+\end_layout
+
+\end_inset
+
+Affiliation Three
+\end_layout
+
+\begin_layout Abstract
+Please provide an abstract of no more than 250 words in a single paragraph.
+ Abstracts should explain to the general reader the major contributions
+ of the article.
+ References in the abstract must be cited in full within the abstract itself
+ and cited in the text.
+\end_layout
+
+\begin_layout Significance
+Authors must submit a 120-word maximum statement about the significance
+ of their research paper written at a level understandable to an undergraduate
+ educated scientist outside their field of speciality.
+ The primary goal of the Significance Statement is to explain the relevance
+ of the work in broad context to a broad readership.
+ The Significance Statement appears in the paper itself and is required
+ for all research papers.
+\end_layout
+
+\begin_layout LeadAuthor
+Lead author last name
+\end_layout
+
+\begin_layout Contributor
+Please provide details of author contributions here.
+\end_layout
+
+\begin_layout Declaration
+Please declare any conflict of interest here.
+\end_layout
+
+\begin_layout EqualAuthors
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+start with a superscript (
+\family sans
+Insert\SpecialChar \menuseparator
+Formatting\SpecialChar \menuseparator
+Superscript
+\family default
+) number, keep coordinated with ones in the corresponding Author environments
+ (in the Affiliations field)
+\end_layout
+
+\end_inset
+
+
+\begin_inset script superscript
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+
+A.O.(Author One) and A.T.
+ (Author Two) contributed equally to this work (remove if not applicable).
+\end_layout
+
+\begin_layout CorrespondingAuthor
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+See note for EqualAuthors
+\end_layout
+
+\end_inset
+
+
+\begin_inset script superscript
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+
+To whom correspondence should be addressed.
+ E-mail: author.two@email.com
+\end_layout
+
+\begin_layout Keywords
+Keyword 1 
+\begin_inset Formula $|$
+\end_inset
+
+ Keyword 2 
+\begin_inset Formula $|$
+\end_inset
+
+ Keyword 3 
+\begin_inset Formula $|$
+\end_inset
+
+ ..
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+% Optional adjustment to line up main text (after abstract) of first page
+ with line numbers,
+\end_layout
+
+\begin_layout Plain Layout
+
+% when using both lineno and twocolumn options.
+ % You should only change this length when
+\end_layout
+
+\begin_layout Plain Layout
+
+% you've finalised the article contents.
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+verticaladjustment{-2pt}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+thispagestyle{firststyle}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+ifthenelse{
+\backslash
+boolean{shortarticle}}{
+\backslash
+ifthenelse{
+\backslash
+boolean{singlecolumn}}{
+\backslash
+abscontentformatted}{
+\backslash
+abscontent}}{}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+% If your first paragraph (i.e.
+ with the 
+\backslash
+dropcap) contains a list environment (quote,
+\end_layout
+
+\begin_layout Plain Layout
+
+% quotation, theorem, definition, enumerate, itemize...), the line after the
+ list may have
+\end_layout
+
+\begin_layout Plain Layout
+
+% some extra indentation.
+ If this is the case, add 
+\backslash
+parshape=0 to the end of the list environment.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex First Letter
+status open
+
+\begin_layout Plain Layout
+T
+\end_layout
+
+\end_inset
+
+his PNAS journal template is provided to help you write your work in the
+ correct journal format.
+ Instructions for use are provided below.
+\end_layout
+
+\begin_layout Standard
+Note: please start your introduction without including the word 
+\begin_inset Quotes eld
+\end_inset
+
+Introduction
+\begin_inset Quotes erd
+\end_inset
+
+ as a section heading (except for math articles in the Physical Sciences
+ section); this heading is implied in the first paragraphs.
+\end_layout
+
+\begin_layout Section*
+Guide to using this template on Overleaf
+\end_layout
+
+\begin_layout Standard
+Please note that whilst this template provides a preview of the typeset
+ manuscript for submission, to help in this preparation, it will not necessarily
+ be the final publication layout.
+ For more detailed information please see the 
+\begin_inset CommandInset href
+LatexCommand href
+name "PNAS Information for Authors"
+target "http://www.pnas.org/site/authors/format.xhtml"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+If you have a question while using this template on Overleaf, please use
+ the help menu (
+\begin_inset Quotes eld
+\end_inset
+
+?
+\begin_inset Quotes erd
+\end_inset
+
+) on the top bar to search for 
+\begin_inset CommandInset href
+LatexCommand href
+name "help and tutorials"
+target "https://www.overleaf.com/help"
+
+\end_inset
+
+.
+ You can also 
+\begin_inset CommandInset href
+LatexCommand href
+name "contact the Overleaf support team"
+target "https://www.overleaf.com/contact"
+
+\end_inset
+
+at any time with specific questions about your manuscript or feedback on
+ the template.
+\end_layout
+
+\begin_layout Subsection*
+Author Affiliations
+\end_layout
+
+\begin_layout Standard
+Include department, institution, and complete address, with the ZIP/postal
+ code, for each author.
+ Use lower case letters to match authors with institutions, as shown in
+ the example.
+ Authors with an ORCID ID may supply this information at submission.
+\end_layout
+
+\begin_layout Subsection*
+Submitting Manuscripts
+\end_layout
+
+\begin_layout Standard
+All authors must submit their articles at 
+\begin_inset CommandInset href
+LatexCommand href
+name "PNAScentral"
+target "http://www.pnascentral.org/cgi-bin/main.plex"
+
+\end_inset
+
+.
+ If you are using Overleaf to write your article, you can use the 
+\begin_inset Quotes eld
+\end_inset
+
+Submit to PNAS
+\begin_inset Quotes erd
+\end_inset
+
+ option in the top bar of the editor window.
+\end_layout
+
+\begin_layout Subsection*
+Format
+\end_layout
+
+\begin_layout Standard
+Many authors find it useful to organize their manuscripts with the following
+ order of sections; Title, Author Affiliation, Keywords, Abstract, Significance
+ Statement, Results, Discussion, Materials and methods, Acknowledgments,
+ and References.
+ Other orders and headings are permitted.
+\end_layout
+
+\begin_layout Subsection*
+Manuscript Length
+\end_layout
+
+\begin_layout Standard
+PNAS generally uses a two-column format averaging 67 characters, including
+ spaces, per line.
+ The maximum length of a Direct Submission research article is six pages
+ and a PNAS PLUS research article is ten pages including all text, spaces,
+ and the number of characters displaced by figures, tables, and equations.
+ When submitting tables, figures, and/or equations in addition to text,
+ keep the text for your manuscript under 39,000 characters (including spaces)
+ for Direct Submissions and 72,000 characters (including spaces) for PNAS
+ PLUS.
+\end_layout
+
+\begin_layout Subsection*
+References
+\end_layout
+
+\begin_layout Standard
+References should be cited in numerical order as they appear in text; this
+ will be done automatically via bibtex, e.g.
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "belkin2002using"
+
+\end_inset
+
+ and 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "berard1994embedding,coifman2005geometric"
+
+\end_inset
+
+.
+ All references, including for the SI, should be included in the main manuscript
+ file.
+ References appearing in both sections should not be duplicated.
+ SI references included in tables should be included with the main reference
+ section.
+\end_layout
+
+\begin_layout Subsection*
+Data Archival
+\end_layout
+
+\begin_layout Standard
+PNAS must be able to archive the data essential to a published article.
+ Where such archiving is not possible, deposition of data in public databases,
+ such as GenBank, ArrayExpress, Protein Data Bank, Unidata, and others outlined
+ in the Information for Authors, is acceptable.
+\end_layout
+
+\begin_layout Subsection*
+Language-Editing Services
+\end_layout
+
+\begin_layout Standard
+Prior to submission, authors who believe their manuscripts would benefit
+ from professional editing are encouraged to use a language-editing service
+ (see list at www.pnas.org/site/authors/language-editing.xhtml).
+ PNAS does not take responsibility for or endorse these services, and their
+ use has no bearing on acceptance of a manuscript for publication.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+centering
+\end_layout
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename frog.eps
+	width 80line%
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Placeholder image of a frog with a long example caption to show justification
+ setting.
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:frog"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+Digital Figures 
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:figures"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Only TIFF, EPS, and high-resolution PDF for Mac or PC are allowed for figures
+ that will appear in the main text, and images must be final size.
+ Authors may submit U3D or PRC files for 3D images; these must be accompanied
+ by 2D representations in TIFF, EPS, or high-resolution PDF format.
+ Color images must be in RGB (red, green, blue) mode.
+ Include the font files for any text.
+\end_layout
+
+\begin_layout Standard
+Figures and Tables should be labelled and referenced in the standard way
+ using the 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+verb|
+\backslash
+label{}|
+\end_layout
+
+\end_inset
+
+ and 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+verb|
+\backslash
+ref{}|
+\end_layout
+
+\end_inset
+
+ commands.
+\end_layout
+
+\begin_layout Standard
+Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:frog"
+
+\end_inset
+
+ shows an example of how to insert a column-wide figure.
+ To insert a figure wider than one column, please use the 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+verb|
+\backslash
+begin{figure*}...
+\backslash
+end{figure*}|
+\end_layout
+
+\end_inset
+
+ environment.
+ Figures wider than one column should be sized to 11.4 cm or 17.8 cm wide.
+\end_layout
+
+\begin_layout Subsection*
+Single column equations
+\end_layout
+
+\begin_layout Standard
+Authors may use 1- or 2-column equations in their article, according to
+ their preference.
+\end_layout
+
+\begin_layout Standard
+To allow an equation to span both columns, options are to use the 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+verb|
+\backslash
+begin{figure*}...
+\backslash
+end{figure*}|
+\end_layout
+
+\end_inset
+
+ environment mentioned above for figures, or to use the 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+verb|
+\backslash
+begin{widetext}...
+\backslash
+end{widetext}|
+\end_layout
+
+\end_inset
+
+ environment as shown in equation 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eqn:example"
+
+\end_inset
+
+ below.
+\end_layout
+
+\begin_layout Standard
+Please note that this option may run into problems with floats and footnotes,
+ as mentioned in the 
+\begin_inset CommandInset href
+LatexCommand href
+name "cuted package documentation"
+target "http://texdoc.net/pkg/cuted"
+
+\end_inset
+
+.
+ In the case of problems with footnotes, it may be possible to correct the
+ situation using commands 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+verb|
+\backslash
+footnotemark|
+\end_layout
+
+\end_inset
+
+ and 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+verb|
+\backslash
+footnotetext|
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+%% Do not use widetext if paper is in single column.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Widetext
+\begin_inset Formula 
+\begin{align}
+(x+y)^{3} & =(x+y)(x+y)^{2}\nonumber \\
+ & =(x+y)(x^{2}+2xy+y^{2})\numberthis\label{eqn:example}\\
+ & =x^{3}+3x^{2}y+3xy^{3}+x^{3}.\nonumber 
+\end{align}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+centering
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Tabular
+<lyxtabular version="3" rows="4" columns="4">
+<features rotate="0" booktabs="true" tabularvalignment="middle">
+<column alignment="left" valignment="top">
+<column alignment="right" valignment="top">
+<column alignment="right" valignment="top">
+<column alignment="right" valignment="top">
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Species 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+CBS 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+CV 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+G3 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1.
+ Acetaldehyde 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.0 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.0 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.0 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2.
+ Vinyl alcohol 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+9.1 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+9.6 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+13.5 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3.
+ Hydroxyethylidene 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+50.8 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+51.2 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+54.0
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+addtabletext
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\end_inset
+
+nomenclature for the TSs refers to the numbered species in the table.
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Comparison of the fitted potential energy surfaces and ab initio benchmark
+ electronic energy calculations
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+Supporting Information (SI)
+\end_layout
+
+\begin_layout Standard
+The main text of the paper must stand on its own without the SI.
+ Refer to SI in the manuscript at an appropriate point in the text.
+ Number supporting figures and tables starting with S1, S2, etc.
+ Authors are limited to no more than 10 SI files, not including movie files.
+ Authors who place detailed materials and methods in SI must provide sufficient
+ detail in the main text methods to enable a reader to follow the logic
+ of the procedures and results and also must reference the online methods.
+ If a paper is fundamentally a study of a new method or technique, then
+ the methods must be described completely in the main text.
+ Because PNAS edits SI and composes it into a single PDF, authors must provide
+ the following file formats only.
+\end_layout
+
+\begin_layout Subsubsection*
+SI Text
+\end_layout
+
+\begin_layout Standard
+Supply Word, RTF, or 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+LaTeX
+\end_layout
+
+\end_inset
+
+ files (
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+LaTeX
+\end_layout
+
+\end_inset
+
+ files must be accompanied by a PDF with the same file name for visual reference
+).
+\end_layout
+
+\begin_layout Subsubsection*
+SI Figures
+\end_layout
+
+\begin_layout Standard
+Provide a brief legend for each supporting figure after the supporting text.
+ Provide figure images in TIFF, EPS, high-resolution PDF, JPEG, or GIF format;
+ figures may not be embedded in manuscript text.
+ When saving TIFF files, use only LZW compression; do not use JPEG compression.
+ Do not save figure numbers, legends, or author names as part of the image.
+ Composite figures must be pre-assembled.
+\end_layout
+
+\begin_layout Subsubsection*
+3D Figures
+\end_layout
+
+\begin_layout Standard
+Supply a composable U3D or PRC file so that it may be edited and composed.
+ Authors may submit a PDF file but please note it will be published in raw
+ format and will not be edited or composed.
+\end_layout
+
+\begin_layout Subsubsection*
+SI Tables
+\end_layout
+
+\begin_layout Standard
+Supply Word, RTF, or 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+LaTeX
+\end_layout
+
+\end_inset
+
+ files (
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+LaTeX
+\end_layout
+
+\end_inset
+
+ files must be accompanied by a PDF with the same file name for visual reference
+); include only one table per file.
+ Do not use tabs or spaces to separate columns in Word tables.
+\end_layout
+
+\begin_layout Subsubsection*
+SI Datasets
+\end_layout
+
+\begin_layout Standard
+Supply Excel (.xls), RTF, or PDF files.
+ This file type will be published in raw format and will not be edited or
+ composed.
+\end_layout
+
+\begin_layout Subsubsection*
+SI Movies
+\end_layout
+
+\begin_layout Standard
+Supply Audio Video Interleave (avi), Quicktime (mov), Windows Media (wmv),
+ animated GIF (gif), or MPEG files and submit a brief legend for each movie
+ in a Word or RTF file.
+ All movies should be submitted at the desired reproduction size and length.
+ Movies should be no more than 10 MB in size.
+\end_layout
+
+\begin_layout Subsubsection*
+Still images
+\end_layout
+
+\begin_layout Standard
+Authors must provide a still image from each video file.
+ Supply TIFF, EPS, high-resolution PDF, JPEG, or GIF files.
+\end_layout
+
+\begin_layout Subsubsection*
+Appendices
+\end_layout
+
+\begin_layout Standard
+PNAS prefers that authors submit individual source files to ensure readability.
+ If this is not possible, supply a single PDF file that contains all of
+ the SI associated with the paper.
+ This file type will be published in raw format and will not be edited or
+ composed.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Materials and Methods
+status open
+
+\begin_layout Plain Layout
+Please describe your materials and methods here.
+ This can be more than one paragraph, and may contain subsections and equations
+ as required.
+ Authors should include a statement in the methods section describing how
+ readers will be able to access the data in the paper.
+\end_layout
+
+\begin_layout Subsection*
+Subsection for Method
+\end_layout
+
+\begin_layout Plain Layout
+Example text for subsection.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+showmatmethods % Display the Materials and Methods section
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Acknowledgments
+Please include your acknowledgments here, set in a single paragraph.
+ Please do not include any acknowledgments in the Supporting Information,
+ or anywhere else in the manuscript.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+showacknow % Display the acknowledgments section
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+% 
+\backslash
+pnasbreak splits and balances the columns before the references.
+\end_layout
+
+\begin_layout Plain Layout
+
+% If you see unexpected formatting errors, try commenting out this line
+\end_layout
+
+\begin_layout Plain Layout
+
+% as it can run into problems with floats and footnotes on the final page.
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+pnasbreak
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset bibtex
+LatexCommand bibtex
+bibfiles "pnas-sample"
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document
