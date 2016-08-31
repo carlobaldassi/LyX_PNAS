@@ -1,7 +1,9 @@
-#LyX 2.1 created this file. For more info see http://www.lyx.org/
-\lyxformat 474
+#LyX 2.2 created this file. For more info see http://www.lyx.org/
+\lyxformat 508
 \begin_document
 \begin_header
+\save_transient_properties true
+\origin unavailable
 \textclass pnas-new
 \begin_preamble
 \makeatother
@@ -43,16 +45,16 @@
 \language_package default
 \inputencoding default
 \fontencoding global
-\font_roman default
-\font_sans default
-\font_typewriter default
-\font_math auto
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
 \font_default_family default
 \use_non_tex_fonts false
 \font_sc false
 \font_osf false
-\font_sf_scale 100
-\font_tt_scale 100
+\font_sf_scale 100 100
+\font_tt_scale 100 100
 \graphics default
 \default_output_format default
 \output_sync 0
@@ -104,7 +106,49 @@
 \begin_body
 
 \begin_layout Title
-Template for preparing your research report submission to PNAS using Overleaf
+Template for preparing your research report submission to PNAS using LyX
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+This template was derived from the official PNAS template for Overleaf,
+ which is available at this URL: 
+\begin_inset Flex URL
+status open
+
+\begin_layout Plain Layout
+
+https://www.overleaf.com/latex/templates/template-for-preparing-your-research-repo
+rt-submission-to-pnas-using-overleaf/fzcbzjvpvnxn#.V8cR6dFCY
+\end_layout
+
+\end_inset
+
+.
+ The original template is distributed under the terms of the LaTeX Project
+ Public License 1.3c available at this URL: 
+\begin_inset Flex URL
+status open
+
+\begin_layout Plain Layout
+
+https://www.latex-project.org/lppl/lppl-1-3c/
+\end_layout
+
+\end_inset
+
+.
+ This template was adapted to work under LyX 2.2 or later and it is released
+ under the same license as the original; except for the title and a few
+ LyX notes, no other modifications were performed over the content of the
+ original template.
+ All auxiliary files (figures, bibliography example, latex classes etc.)
+ were left unchanged.
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Author
@@ -225,8 +269,8 @@ status collapsed
 \begin_layout Plain Layout
 start with a superscript (
 \family sans
-Insert\SpecialChar \menuseparator
-Formatting\SpecialChar \menuseparator
+Insert\SpecialChar menuseparator
+Formatting\SpecialChar menuseparator
 Superscript
 \family default
 ) number, keep coordinated with ones in the corresponding Author environments
@@ -860,7 +904,7 @@ centering
 \begin_layout Plain Layout
 \begin_inset Tabular
 <lyxtabular version="3" rows="4" columns="4">
-<features rotate="0" booktabs="true" tabularvalignment="middle">
+<features booktabs="true" tabularvalignment="middle">
 <column alignment="left" valignment="top">
 <column alignment="right" valignment="top">
 <column alignment="right" valignment="top">
