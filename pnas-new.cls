@@ -1,5 +1,5 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% pnas-new.cls, v1.2, 2016/02/28 
+% pnas-new.cls, v1.41, 2016/11/15
 %
 % This class file enables authors to prepare research 
 % articles for submission to PNAS.
@@ -23,7 +23,7 @@
 % to produce the PDF, not dvis -> ps -> pdf nor dvipdf
 % 
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{pnas-new}[28/02/2015, v1.2]
+\ProvidesClass{pnas-new}[15/11/2016, v1.41]
 \AtEndOfClass{\RequirePackage{microtype}}
 % Option for line numbers
 \newif\if@pnaslineno
@@ -99,8 +99,10 @@
 \usepackage[printwatermark]{xwatermark}
 \newboolean{displaywatermark}
 \setboolean{displaywatermark}{true} % Set to false to remove the watermark
-\ifthenelse{\boolean{displaywatermark}}{%
-\newwatermark[allpages,color=gray!20,angle=45,scale=3,xpos=0,ypos=0]{DRAFT}}{}
+\AtBeginDocument{%
+  \ifthenelse{\boolean{displaywatermark}}{%
+  \newwatermark[allpages,color=gray!20,angle=45,scale=3,xpos=0,ypos=0]{DRAFT}}{}
+}
 
 %% Copyright statement (not used)
 \newboolean{displaycopyright}
@@ -144,10 +146,25 @@
 %\definecolor{pnasbluetext}{RGB}{0,115,209} % Not used
 %\definecolor{pnasblueback}{RGB}{210,230,247} % Not used
 
-%% Bibliography    
-\RequirePackage[numbers,sort&compress]{natbib}
+%% Bibliography
+%% v1.41 (15/11/2016)
+%% Use pnas-new.bst if available
+%% If not, try to use pnas2011.bst instead
+%% If both aren't available, fall back to
+%% unsrtnat
+\RequirePackage[numbers,sort&compress,merge,round]{natbib}
 \setlength{\bibsep}{0.0pt}
-\bibliographystyle{pnas2011}
+\IfFileExists{pnas-new.bst}{
+  \bibliographystyle{pnas-new}
+}{
+  \IfFileExists{pnas2011.bst}{
+    \bibliographystyle{pnas2011}
+    \PackageWarning{pnas-new}{pnas-new.bst not found; using pnas2011.bst instead}
+  }{
+    \bibliographystyle{unsrtnat}
+    \PackageWarning{pnas-new}{pnas-new.bst and pnas2011.bst not found; falling back to unsrtnat instead}
+  }
+}
 \renewcommand{\bibsection}{} % Remove header
 \renewcommand\bibfont{\normalfont\sffamily\fontsize{6}{8}\selectfont} % set font to be sans serif
 
@@ -159,11 +176,11 @@
 
 %% Figure caption style
 \DeclareCaptionFormat{pnasformat}{\normalfont\sffamily\fontsize{7}{9}\selectfont#1#2#3}
-\captionsetup{format=pnasformat}
+\captionsetup*{format=pnasformat}
 
 %% Table style
 \RequirePackage{etoolbox}
-\captionsetup[table]{labelfont+={small},textfont+={small,sf,bf},skip=10pt,position=above}
+\captionsetup*[table]{labelfont+={small},textfont+={small,sf,bf},skip=10pt,position=above}
 % booktabs provide nice spacing, but rule widths and distances need fixing
 \setlength{\heavyrulewidth}{0.5pt}
 \setlength{\lightrulewidth}{0.5pt}
@@ -364,7 +381,7 @@ THE ABSTRACT\vskip12pt}\let\go\relax\fi
 }%
 
 %% Footnotes set up
-\RequirePackage[flushmargin,ragged]{footmisc}
+\RequirePackage[flushmargin,ragged,symbol*]{footmisc}
 \renewcommand*{\footnotelayout}{\normalfont\sffamily\fontsize{6}{8}\selectfont} % set the footnote font
 \renewcommand{\footnoterule}{% Set the footnote hrule style
   \kern -3pt
@@ -387,9 +404,15 @@ THE ABSTRACT\vskip12pt}\let\go\relax\fi
 	{0pt}
 	{3.25ex plus 1ex minus .2ex}
 	{1.5ex plus .2ex}
+
+
 \newcommand{\showacknow}{% Display acknowledgments section
-\@ifundefined{@acknow}{}{\acknow@section{ACKNOWLEDGMENTS}\small\@acknow}
+\@ifundefined{@acknow}{}{
+\vskip 3.25ex plus 1ex minus .2ex
+\noindent{\sffamily\normalsize\bfseries ACKNOWLEDGMENTS.\hspace{1.5ex plus .2ex}}
+\small\@acknow}
 }
+
 
 %% Set up the materials&methods field
 \titleclass{\matmethods@section}{straight}[\part]
@@ -412,3 +435,6 @@ THE ABSTRACT\vskip12pt}\let\go\relax\fi
 
 %% Other packages
 \RequirePackage{enumitem} % For reducing bullet list item separation
+
+%% For sidecaptions
+\RequirePackage[rightcaption]{sidecap}

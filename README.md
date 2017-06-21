@@ -2,7 +2,7 @@
 
 This repository provides all necessary files to use [the LyX editor][LyX], version 2.2 or later, in the preparation
 of a LaTeX file for submission to the [Proceedings of the National Academy of Sciences of the USA (PNAS)][PNAS],
-following the latest (as of August 2016) template provided by PNAS.
+following the latest (as of June 2017) template provided by PNAS.
 
 In particular, it provides the following:
 
@@ -29,7 +29,7 @@ Check the `Show path` option, and look at the directories where the other files 
 For example, LaTeX classes and styles may be installed in the `/usr/share/texlive/texmf-dist/tex/latex/` directory, and
 BibTeX styles may be installed in the `/usr/share/texlive/texmf-dist/bibtex/bst/` directory. I suggest creating a directory
 called `pnas-new` under the LaTeX classes/styles system directory, and copying all the `*.cls` and `*.sty` files from this
-repository there; then, you should copy the `pnas2011.bst` file under the BibTeX directory.
+repository there; then, you should copy the `pnas-new.bst` file under the BibTeX directory.
 
 After you copied all files, you should update the LaTeX package information, running the command `sudo texhash`.
 

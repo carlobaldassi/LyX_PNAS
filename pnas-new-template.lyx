@@ -333,7 +333,7 @@ Keyword 1
 
 \begin_layout Standard
 \begin_inset ERT
-status collapsed
+status open
 
 \begin_layout Plain Layout
 
@@ -617,11 +617,7 @@ Prior to submission, authors who believe their manuscripts would benefit
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
-
-\begin_layout Plain Layout
-
-\end_layout
+status open
 
 \begin_layout Plain Layout
 \begin_inset ERT
@@ -639,6 +635,7 @@ centering
 
 \begin_inset Graphics
 	filename frog.eps
+	lyxscale 50
 	width 80line%
 
 \end_inset
@@ -660,6 +657,69 @@ name "fig:frog"
 
 \end_inset
 
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float SCfigure
+wide true
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+centering
+\end_layout
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename frog.eps
+	lyxscale 50
+	width 11.4cm
+	height 11.4cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+This caption would be placed at the side of the figure, rather than below
+ it.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:side"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
 
 \end_layout
 
@@ -751,6 +811,24 @@ end{figure*}|
 
  environment.
  Figures wider than one column should be sized to 11.4 cm or 17.8 cm wide.
+ Use 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+verb|
+\backslash
+begin{SCfigure*}...
+\backslash
+end{SCfigure*}|
+\end_layout
+
+\end_inset
+
+ for a wide figure with side captions.
 \end_layout
 
 \begin_layout Subsection*
@@ -894,6 +972,19 @@ status collapsed
 
 \backslash
 centering
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Comparison of the fitted potential energy surfaces and ab initio benchmark
+ electronic energy calculations
 \end_layout
 
 \end_inset
@@ -1072,6 +1163,10 @@ G3
 \end_layout
 
 \begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
 \begin_inset ERT
 status collapsed
 
@@ -1107,16 +1202,6 @@ status collapsed
 \end_inset
 
  
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Comparison of the fitted potential energy surfaces and ab initio benchmark
- electronic energy calculations
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Plain Layout
@@ -1302,13 +1387,13 @@ Example text for subsection.
 
 \begin_layout Standard
 \begin_inset ERT
-status collapsed
+status open
 
 \begin_layout Plain Layout
 
 
 \backslash
-showmatmethods % Display the Materials and Methods section
+showmatmethods{} % Display the Materials and Methods section
 \end_layout
 
 \end_inset
@@ -1324,13 +1409,13 @@ Please include your acknowledgments here, set in a single paragraph.
 
 \begin_layout Standard
 \begin_inset ERT
-status collapsed
+status open
 
 \begin_layout Plain Layout
 
 
 \backslash
-showacknow % Display the acknowledgments section
+showacknow{} % Display the acknowledgments section
 \end_layout
 
 \end_inset
@@ -1340,7 +1425,7 @@ showacknow % Display the acknowledgments section
 
 \begin_layout Standard
 \begin_inset ERT
-status collapsed
+status open
 
 \begin_layout Plain Layout
 
@@ -1351,7 +1436,16 @@ pnasbreak splits and balances the columns before the references.
 
 \begin_layout Plain Layout
 
-% If you see unexpected formatting errors, try commenting out this line
+% Uncomment 
+\backslash
+pnasbreak to view the references in the PNAS-style 
+\end_layout
+
+\begin_layout Plain Layout
+
+% If you see unexpected formatting errors, try commenting out 
+\backslash
+pnasbreak
 \end_layout
 
 \begin_layout Plain Layout
@@ -1361,7 +1455,7 @@ pnasbreak splits and balances the columns before the references.
 
 \begin_layout Plain Layout
 
-
+%
 \backslash
 pnasbreak
 \end_layout

@@ -346,6 +346,20 @@ InsetLayout Flex:Materials_and_Methods
         LabelString           "Materials and Methods"
 End
 
+Float
+	Type                  SCfigure
+	GuiName               "Figure with side captions"
+	Placement             t
+	Extension             lof
+	NumberWithin          none
+	Style                 plain
+	ListName              "List of Figures"
+	IsPredefined          true
+	UsesFloatPkg          false
+	ListCommand           listoffigures
+	RefPrefix             fig
+End
+
 #Counter tablenote
 #        PrettyFormat         "Tablenote ##"
 #        Within               table
