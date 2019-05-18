@@ -1,7 +1,7 @@
 %%% PNAS Invited Submission style file
 %%% For use with pnas-new.cls
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesPackage{pnasinvited}[2016/02/28 v1.2 PNAS Invited Submission style]
+\ProvidesPackage{pnasinvited}[2018/05/06 v1.3 PNAS Invited Submission style]
 
 %% Set whether the abstract is set into the first column
 \setboolean{shortarticle}{false} 
@@ -122,18 +122,6 @@
 	{1.5ex plus .2ex}
 \renewcommand{\showacknow}{% Display acknowledgments section
 \@ifundefined{@acknow}{}{\acknow@section{Acknowledgments}\noindent\@acknow}
-}
-
-%% Break at end of article (before references)
-% The blank line before the strip command ensures there is nothing placed
-% directly before the break (which can cause formatting issues).
-\newcommand{\pnasbreak}{
-
-\begin{strip}
-\vskip-5pt
-\hrule
-\vskip-6pt
-\end{strip}
 }
 
 \endinput

@@ -2,7 +2,7 @@
 
 This repository provides all necessary files to use [the LyX editor][LyX], version 2.2 or later, in the preparation
 of a LaTeX file for submission to the [Proceedings of the National Academy of Sciences of the USA (PNAS)][PNAS],
-following the latest (as of June 2017) template provided by PNAS.
+following the latest (as of May 2019) template provided by PNAS.
 
 In particular, it provides the following:
 
@@ -13,7 +13,8 @@ In particular, it provides the following:
   at [this link][orig-template]. The original template is distributed under the terms of the
   [LaTeX Project Public License 1.3c][LPPL]. The template was adapted to work under LyX 2.2 or later and it is
   released under the same license as the original; except for the title and a few LyX notes, no other modifications
-  were performed over the content of the original template. All auxiliary files were left unchanged.
+  were performed over the content of the original template. All auxiliary files were left unchanged, except for
+  a small fix in `"pnas-new.bst"` (a function definition was moved to avoid an error).
 
 **NOTE: This is not an official repository, I am not the author nor the maintainer of the original PNAS template.**
 
@@ -28,8 +29,8 @@ First, you need to locate your system directories for LaTeX files. To do this, o
 Check the `Show path` option, and look at the directories where the other files are installed.
 For example, LaTeX classes and styles may be installed in the `/usr/share/texlive/texmf-dist/tex/latex/` directory, and
 BibTeX styles may be installed in the `/usr/share/texlive/texmf-dist/bibtex/bst/` directory. I suggest creating a directory
-called `pnas-new` under the LaTeX classes/styles system directory, and copying all the `*.cls` and `*.sty` files from this
-repository there; then, you should copy the `pnas-new.bst` file under the BibTeX directory.
+called `pnas-new` under the LaTeX classes/styles system directory, and copying all the `*.cls`, `*.sty` and `*.ldf` files
+from this repository there; then, you should copy the `pnas-new.bst` file under the BibTeX directory.
 
 After you copied all files, you should update the LaTeX package information, running the command `sudo texhash`.
 
@@ -52,7 +53,7 @@ and it should work with the PNAS submission system.
 [LyX]: https://www.lyx.org/
 [PNAS]: http://www.pnas.org
 [old-layout]: https://wiki.lyx.org/Layouts/Pnastwo
-[orig-template]: https://www.overleaf.com/latex/templates/template-for-preparing-your-research-report-submission-to-pnas-using-overleaf/fzcbzjvpvnxn#.V8cR6dFCY
+[orig-template]: https://www.overleaf.com/latex/templates/template-for-preparing-your-research-report-submission-to-pnas-using-overleaf/fzcbzjvpvnxn#.Vst10_krJhE
 [LPPL]: https://www.latex-project.org/lppl/lppl-1-3c/
 
 

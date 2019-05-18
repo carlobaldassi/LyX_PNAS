@@ -59,6 +59,7 @@ ClassOptions
         Other      9pt
         Other      twocolumn
         Other      twoside
+        Other      lineno
 End
 
 Style Standard
@@ -265,12 +266,12 @@ Input stdfloats.inc
 Input stdcounters.inc
 
 
-Style Widetext
-        CopyStyle             Standard
-        Category              Other
-        LatexType             Environment
-        LatexName             widetext
-End 
+# Style Widetext
+#         CopyStyle             Standard
+#         Category              Other
+#         LatexType             Environment
+#         LatexName             widetext
+# End 
 
 Style Acknowledgments
         CopyStyle             Standard
@@ -345,6 +346,8 @@ InsetLayout Flex:Materials_and_Methods
         LyxType               custom
         LabelString           "Materials and Methods"
 End
+
+OutlinerName SCfigure        "Figures"
 
 Float
 	Type                  SCfigure
