@@ -1189,11 +1189,34 @@ literal "false"
 
 .
  For SI formatting instructions click 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
 \begin_inset CommandInset href
 LatexCommand href
 name "here"
 target "https://www.pnascentral.org/cgi-bin/main.plex?form_type=display_auth_si_instructions"
-literal "false"
+literal "true"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+href{https://www.pnascentral.org/cgi-bin/main.plex?form_type=display_auth_si_instru
+ctions}{here}
+\end_layout
 
 \end_inset
 
@@ -1203,7 +1226,7 @@ literal "false"
 LatexCommand href
 name "here"
 target "https://www.overleaf.com/latex/templates/pnas-template-for-supplementary-information/wqfsfqwyjtsd"
-literal "false"
+literal "true"
 
 \end_inset
 
