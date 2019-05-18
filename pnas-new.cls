@@ -1,5 +1,5 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% pnas-new.cls, v1.41, 2016/11/15
+% pnas-new.cls, v1.43, 2017/08/23
 %
 % This class file enables authors to prepare research 
 % articles for submission to PNAS.
@@ -23,7 +23,7 @@
 % to produce the PDF, not dvis -> ps -> pdf nor dvipdf
 % 
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{pnas-new}[15/11/2016, v1.41]
+\ProvidesClass{pnas-new}[23/08/2017, v1.43]
 \AtEndOfClass{\RequirePackage{microtype}}
 % Option for line numbers
 \newif\if@pnaslineno
@@ -96,12 +96,16 @@
 \newcommand\numberthis{\addtocounter{equation}{1}\tag{\theequation}}
 
 %% Watermark 
-\usepackage[printwatermark]{xwatermark}
 \newboolean{displaywatermark}
 \setboolean{displaywatermark}{true} % Set to false to remove the watermark
 \AtBeginDocument{%
   \ifthenelse{\boolean{displaywatermark}}{%
-  \newwatermark[allpages,color=gray!20,angle=45,scale=3,xpos=0,ypos=0]{DRAFT}}{}
+  \RequirePackage{draftwatermark}
+  \SetWatermarkAngle{45}
+  \SetWatermarkColor{gray!20}
+  \SetWatermarkFontSize{3cm}
+  \SetWatermarkText{{\fontfamily{bch}\bfseries DRAFT}}
+}{}
 }
 
 %% Copyright statement (not used)
@@ -255,6 +259,7 @@
 
 %% Section/subsection/paragraph set-up
 \RequirePackage[explicit]{titlesec}
+\setcounter{secnumdepth}{5}
 \renewcommand{\thesubsection}{\Alph{subsection}}
 
 \titleformat{\section}
