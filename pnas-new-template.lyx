@@ -125,7 +125,7 @@ status open
 \begin_layout Plain Layout
 
 https://www.overleaf.com/latex/templates/template-for-preparing-your-research-repo
-rt-submission-to-pnas-using-overleaf/fzcbzjvpvnxn#.V8cR6dFCY
+rt-submission-to-pnas-using-overleaf/fzcbzjvpvnxn
 \end_layout
 
 \end_inset
@@ -250,9 +250,9 @@ Please provide an abstract of no more than 250 words in a single paragraph.
 Authors must submit a 120-word maximum statement about the significance
  of their research paper written at a level understandable to an undergraduate
  educated scientist outside their field of speciality.
- The primary goal of the Significance Statement is to explain the relevance
+ The primary goal of the significance statement is to explain the relevance
  of the work in broad context to a broad readership.
- The Significance Statement appears in the paper itself and is required
+ The significance statement appears in the paper itself and is required
  for all research papers.
 \end_layout
 
@@ -265,7 +265,7 @@ Please provide details of author contributions here.
 \end_layout
 
 \begin_layout Declaration
-Please declare any conflict of interest here.
+Please declare any competing interests here.
 \end_layout
 
 \begin_layout EqualAuthors
@@ -294,8 +294,8 @@ Superscript
 
 \end_inset
 
-A.O.(Author One) and A.T.
- (Author Two) contributed equally to this work (remove if not applicable).
+A.O.(Author One) contributed equally to this work with A.T.
+ (Author Two) (remove if not applicable).
 \end_layout
 
 \begin_layout CorrespondingAuthor
@@ -323,11 +323,11 @@ To whom correspondence should be addressed.
 
 \begin_layout Keywords
 \begin_inset Note Note
-status collapsed
+status open
 
 \begin_layout Plain Layout
 At least three keywords are required at submission.
- Please provide two to five keywords, separated by the pipe symbol.
+ Please provide three to five keywords, separated by the pipe symbol.
 \end_layout
 
 \end_inset
@@ -446,7 +446,7 @@ Please note that whilst this template provides a preview of the typeset
 \begin_inset CommandInset href
 LatexCommand href
 name "PNAS Information for Authors"
-target "http://www.pnas.org/site/authors/format.xhtml"
+target "https://www.pnas.org/page/authors/format"
 literal "false"
 
 \end_inset
@@ -531,10 +531,11 @@ Format
 
 \begin_layout Standard
 Many authors find it useful to organize their manuscripts with the following
- order of sections; Title, Author Affiliation, Keywords, Abstract, Significance
- Statement, Results, Discussion, Materials and methods, Acknowledgments,
- and References.
+ order of sections; title, author line and affiliations, keywords, abstract,
+ significance statement, introduction, results, discussion, materials and
+ methods, acknowledgments, and references.
  Other orders and headings are permitted.
+ 
 \end_layout
 
 \begin_layout Subsection*
@@ -542,16 +543,11 @@ Manuscript Length
 \end_layout
 
 \begin_layout Standard
-PNAS generally uses a two-column format averaging 67 characters, including
- spaces, per line.
- The maximum length of a Direct Submission research article is six pages
- and a Direct Submission Plus research article is ten pages including all
- text, spaces, and the number of characters displaced by figures, tables,
- and equations.
- When submitting tables, figures, and/or equations in addition to text,
- keep the text for your manuscript under 39,000 characters (including spaces)
- for Direct Submissions and 72,000 characters (including spaces) for Direct
- Submission Plus.
+A standard 6-page article is approximately 4,000 words, 50 references, and
+ 4 medium-size graphical elements (i.e., figures and tables).
+ The preferred length of articles remains at 6 pages, but PNAS will allow
+ articles up to a maximum of 12 pages.
+ 
 \end_layout
 
 \begin_layout Subsection*
@@ -590,7 +586,16 @@ Data Archival
 PNAS must be able to archive the data essential to a published article.
  Where such archiving is not possible, deposition of data in public databases,
  such as GenBank, ArrayExpress, Protein Data Bank, Unidata, and others outlined
- in the Information for Authors, is acceptable.
+ in the 
+\begin_inset CommandInset href
+LatexCommand href
+name "Information for Authors"
+target "https://www.pnas.org/page/authors/journal-policies#xi"
+literal "false"
+
+\end_inset
+
+, is acceptable.
 \end_layout
 
 \begin_layout Subsection*
@@ -600,7 +605,7 @@ Language-Editing Services
 \begin_layout Standard
 Prior to submission, authors who believe their manuscripts would benefit
  from professional editing are encouraged to use a language-editing service
- (see list at www.pnas.org/site/authors/language-editing.xhtml).
+ (see list at www.pnas.org/page/authors/language-editing).
  PNAS does not take responsibility for or endorse these services, and their
  use has no bearing on acceptance of a manuscript for publication.
 \end_layout
@@ -636,7 +641,7 @@ centering
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Placeholder image of a frog with a long example caption to show justification
+Placeholder image of a frog with a long example legend to show justification
  setting.
 \end_layout
 
@@ -692,7 +697,7 @@ centering
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-This caption would be placed at the side of the figure, rather than below
+This legend would be placed at the side of the figure, rather than below
  it.
 \end_layout
 
@@ -725,16 +730,25 @@ Digital Figures
 \end_layout
 
 \begin_layout Standard
-Only TIFF, EPS, and high-resolution PDF for Mac or PC are allowed for figures
- that will appear in the main text, and images must be final size.
- Authors may submit U3D or PRC files for 3D images; these must be accompanied
+EPS, high-resolution PDF, and PowerPoint are preferred formats for figures
+ that will be used in the main manuscript.
+ Authors may submit PRC or U3D files for 3D images; these must be accompanied
  by 2D representations in TIFF, EPS, or high-resolution PDF format.
  Color images must be in RGB (red, green, blue) mode.
  Include the font files for any text.
+ 
 \end_layout
 
 \begin_layout Standard
-Figures and Tables should be labelled and referenced in the standard way
+Images must be provided at final size, preferably 1 column width (8.7cm).
+ Figures wider than 1 column should be sized to 11.4cm or 17.8cm wide.
+ Numbers, letters, and symbols should be no smaller than 6 points (2mm)
+ and no larger than 12 points (6mm) after reduction and must be consistent.
+ 
+\end_layout
+
+\begin_layout Standard
+Figures and tables should be labelled and referenced in the standard way
  using the 
 \begin_inset ERT
 status collapsed
@@ -813,7 +827,7 @@ end{SCfigure*}|
 
 \end_inset
 
- for a wide figure with side captions.
+ for a wide figure with side legends.
 \end_layout
 
 \begin_layout Subsection*
@@ -1175,48 +1189,15 @@ Supporting Information Appendix (SI)
 \end_layout
 
 \begin_layout Standard
-Authors should submit SI as a single separate PDF file, combining all text,
- figures, tables, movie legends, and SI references.
+Authors should submit SI as a single separate SI Appendix PDF file, combining
+ all text, figures, tables, movie legends, and SI references.
  PNAS will publish SI uncomposed, as the authors have provided it.
  Additional details can be found here: 
 \begin_inset CommandInset href
 LatexCommand href
 name "policy on SI"
-target "https://www.pnas.org/page/authors/submission"
+target "https://www.pnas.org/page/authors/format#Supporting_Information"
 literal "false"
-
-\end_inset
-
-.
- For SI formatting instructions click 
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-\begin_inset CommandInset href
-LatexCommand href
-name "here"
-target "https://www.pnascentral.org/cgi-bin/main.plex?form_type=display_auth_si_instructions"
-literal "true"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-href{https://www.pnascentral.org/cgi-bin/main.plex?form_type=display_auth_si_instru
-ctions}{here}
-\end_layout
 
 \end_inset
 
@@ -1262,9 +1243,10 @@ SI Movies
 \begin_layout Standard
 Supply Audio Video Interleave (avi), Quicktime (mov), Windows Media (wmv),
  animated GIF (gif), or MPEG files.
- Movie Legends should be included in the SI Appendix file.
+ Movie legends should be included in the SI Appendix file.
  All movies should be submitted at the desired reproduction size and length.
- Movies should be no more than 10 MB in size.
+ Movies should be no more than 10MB in size.
+ 
 \end_layout
 
 \begin_layout Subsection*
